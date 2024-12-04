@@ -13,8 +13,8 @@ SVM merupakan teknik pembelajaran mesin terawasi yang berfokus pada pencarian hy
 NB merupakan teknik prediksi probabilistik sederhana, yang bekerja dengan menerapkan teorema Bayes dan mengasumsikan bahwa semua fitur atau atribut yang digunakan untuk prediksi saling independen.
 Backpropagation merupakan salah satu algoritma pembelajaran pada jaringan syaraf tiruan yang dirancang untuk beroperasi pada jaringan feedforward multi layers. 
 
-#Data
+# Data
 Data yang akan digunakan merupakan dataset penggabungan antara data raster dari band 8 dan band 11 pada citra sentinel-2. Selain itu digunakan juga data training dan testing dari ground truth data (digitasi).  Data training dan testing akan dibagi secara acak terlebih dahulu sebelum digunakan untuk data latih model.
 
-#Kesimpulan
+# Kesimpulan
 Dari hasil pemilihan model klasifikasi, SVM berhasil mencapai akurasi tinggi dalam mengidentifikasi pola sebaran lahan, dengan konsentrasi signifikan pada area non-vegetasi di sekitar titik akses utama dan fasilitas penting, yang mengindikasikan hubungan erat antara pembangunan perkotaan dan infrastruktur. Sebaliknya, terdapat penurunan pada area vegetasi dan perairan yang menyoroti dampak negatif dari ekspansi infrastruktur terhadap sumber daya alam. Analisis juga mengidentifikasi area pertumbuhan potensial dalam radius 3-5 km dari Universitas.
