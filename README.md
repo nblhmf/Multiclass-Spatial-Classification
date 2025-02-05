@@ -1,20 +1,20 @@
 # Multiclass-Spatial-Classification
 
 # Background
-Perubahan penggunaan lahan merupakan isu global yang semakin mendesak, terutama di kawasan perkotaan yang mengalami pertumbuhan pesat. Pertambahan jumlah penduduk dan peningkatan kualitas hidup mengarah pada kebutuhan yang lebih tinggi akan fasilitas, infrastruktur, dan ruang publik. Khususnya Universitas berfungsi tidak hanya sebagai pusat aktivitas dan pelayanan pendidikan tetapi juga sebagai pendorong pertumbuhan ekonomi dan sosial di sekitarnya. Namun, aktivitas yang meningkat ini sering kali menyebabkan pergeseran fungsi lahan dari area vegetasi menjadi non-vegetasi, yang dapat merusak keseimbangan lingkungan
+Perubahan penggunaan lahan merupakan fenomena yang terus berkembang seiring dengan pertumbuhan wilayah dan kebutuhan infrastruktur. Di kawasan sekitar universitas, perubahan ini menjadi semakin signifikan karena meningkatnya aktivitas akademik, sosial, dan ekonomi. Identifikasi dan pemetaan penggunaan lahan menjadi penting untuk memahami dinamika perubahan serta mendukung pengelolaan tata ruang yang lebih efektif.
 
-Analisis spasial digunakan untuk menganalisis kemampuan lahan dan penggunaan lahan, serta untuk mengetahui kapasitas daya dukung.
+Dengan kemajuan teknologi penginderaan jauh dan machine learning, klasifikasi penggunaan lahan dapat dilakukan secara lebih efisien menggunakan data citra satelit. Teknik ini memungkinkan pemetaan wilayah dengan ketelitian tinggi, mengkategorikan lahan ke dalam kelas tertentu.
 
 # Goals
-Tujuan dari proyek ini adalah mengklasifikasikan penggunaan lahan di sekitar Universitas menjadi tiga kelas: vegetasi, non-vegetasi, dan perairan. Selain mengevaluasi kinerja metode klasifikasi berdasarkan akurasi, sensitivitas, spesifisitas, dan Area Under the Curve (AUC), proyek juga memberikan wawasan mengenai kepadatan penggunaan lahan dan pola sebaran non-vegetasi.
+Proyek ini bertujuan untuk mengklasifikasikan penggunaan lahan berdasarkan data citra satelit dengan mengevaluasi performa metode klasifikasi yang digunakan. Model dievaluasi berdasarkan metrik akurasi, sensitivitas, spesifisitas, dan Area Under the Curve (AUC) untuk menentukan metode terbaik dalam membedakan tiga kelas penggunaan lahan.
 
 # Metode Penelitian
-SVM merupakan teknik pembelajaran mesin terawasi yang berfokus pada pencarian hyperplane optimal yang memisahkan dua kelas data dalam klasifikasi binary, berdasarkan teori pembelajaran mesin statistik.
-NB merupakan teknik prediksi probabilistik sederhana, yang bekerja dengan menerapkan teorema Bayes dan mengasumsikan bahwa semua fitur atau atribut yang digunakan untuk prediksi saling independen.
-Backpropagation merupakan salah satu algoritma pembelajaran pada jaringan syaraf tiruan yang dirancang untuk beroperasi pada jaringan feedforward multi layers. 
+SVM merupakan algoritma pembelajaran mesin terawasi yang mencari hyperplane optimal untuk memisahkan kelas-kelas data dalam klasifikasi binary.
+NB merupakan model probabilistik berbasis teorema Bayes yang mengasumsikan independensi antar fitur
+Backpropagation merupakan algoritma jaringan syaraf tiruan yang digunakan untuk mengoptimalkan bobot dalam klasifikasi data spasial.
 
 # Data
-Data yang akan digunakan merupakan dataset penggabungan antara data raster dari band 8 dan band 11 pada citra sentinel-2. Selain itu digunakan juga data training dan testing dari ground truth data (digitasi).  Data training dan testing akan dibagi secara acak terlebih dahulu sebelum digunakan untuk data latih model.
+Dataset yang digunakan dalam penelitian ini berasal dari citra satelit Sentinel-2, khususnya band 8 dan band 11, yang diintegrasikan dengan data ground truth hasil digitasi manual. Data tersebut digunakan untuk melatih dan menguji model klasifikasi agar mampu mengidentifikasi perbedaan antara vegetasi, non-vegetasi, dan perairan dengan tingkat akurasi yang optimal.
 
 # Kesimpulan
-Dari hasil pemilihan model klasifikasi, SVM berhasil mencapai akurasi tinggi dalam mengidentifikasi pola sebaran lahan, dengan konsentrasi signifikan pada area non-vegetasi di sekitar titik akses utama dan fasilitas penting, yang mengindikasikan hubungan erat antara pembangunan perkotaan dan infrastruktur. Sebaliknya, terdapat penurunan pada area vegetasi dan perairan yang menyoroti dampak negatif dari ekspansi infrastruktur terhadap sumber daya alam. Analisis juga mengidentifikasi area pertumbuhan potensial dalam radius 3-5 km dari Universitas.
+Hasil eksperimen menunjukkan bahwa metode [model terbaik] memberikan performa terbaik dalam klasifikasi penggunaan lahan dengan akurasi tertinggi serta perbedaan minimal antara training dan testing data. Model ini mampu mengidentifikasi pola klasifikasi dengan tingkat kesalahan yang lebih rendah dibandingkan metode lainnya. Dengan demikian, pendekatan ini dapat menjadi dasar dalam pengembangan model klasifikasi spasial berbasis machine learning untuk analisis penggunaan lahan di masa depan.
